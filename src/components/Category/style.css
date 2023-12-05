@@ -1,0 +1,36 @@
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #FFFFFE;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  color: #2B2C34;
+  padding: 20px;
+  border-radius: 15px;
+  min-width: 160px;
+  min-height: 200px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.category:hover {
+  background-color: #6246EA;
+  color: white;
+}
+
+.category__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.category__description {
+  
+}
+
+p {
+  padding: 0;
+  margin: 0;
+
+}

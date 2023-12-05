@@ -1,0 +1,18 @@
+.create-category {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #2B2C34;
+  align-items: center;
+}
+
+.create-category__title, .create-category__description {
+  color: #2B2C34;
+  max-width: 760px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 35px;
+}

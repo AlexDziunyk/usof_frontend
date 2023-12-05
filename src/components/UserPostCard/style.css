@@ -1,0 +1,45 @@
+.user-post-card__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-post-card {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 16px;
+  margin-bottom: 15px;
+}
+
+.user-post-card__avatar {
+}
+
+.user-post-card__avatar img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-post-card__author {
+  font-size: 18px;
+}
+
+.user-post-card__date {
+  font-size: 14px;
+  color: grey;
+}
+
+.user-post-card__active {
+  font-size: 20px;
+  font-weight: 700;
+  color: green;
+}
+
+.user-post-card__inactive {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(163, 4, 4);
+}

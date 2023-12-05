@@ -1,0 +1,94 @@
+.profile-me {
+  padding: 15px;
+}
+
+.profile-me__container {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+
+.profile-me__avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-me__avatar img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-me__data {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.profile-me__login {
+  font-size: 20px;
+}
+
+.profile-me__fullname {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.profile-me__fullname-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+}
+
+.profile-me__fullname-text {
+  font-size: 20px;
+}
+
+.profile-me__fullname_button-green {
+  cursor: pointer;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 18px;
+  background-color: #38b000;
+}
+
+.profile-me__fullname_button-red {
+  background-color: #d90429;
+  text-decoration: none;
+  border: none;
+	cursor: pointer;
+	padding: 15px;
+  border-radius: 8px;
+	text-align: center;
+	font-size: 18px;
+	transition: 0.3s;
+  background-color: #ef233c;
+}
+
+.profile-me__fullname_button-red:hover {
+  background-color: #ef233c;
+}
+
+.profile-me__avatar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile-me__avatar-input-hidden {
+  display: none;
+}
+
+.profile-me__avatar-input {
+  background-color: #38b000;
+  padding: 10px;
+  color: black;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+}

@@ -1,0 +1,46 @@
+.create-post__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #2B2C34;
+  align-items: center;
+}
+
+.create-post__title, .create-post__details, .create-post__categories {
+  color: #2B2C34;
+  max-width: 760px;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  gap: 10px;
+  padding: 35px;
+}
+
+#demo-multiple-chip-label {
+  color: #2B2C34;
+  font-weight: 700;
+}
+
+#select-multiple-chip {
+  color: #2B2C34;
+}
+
+h4 {
+  margin: 0;
+}
+
+.create-post__title-input {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.error {
+  color: rgb(206, 24, 24);
+  font-size: 20px;
+  font-weight: 700;
+}

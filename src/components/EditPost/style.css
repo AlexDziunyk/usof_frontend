@@ -1,0 +1,101 @@
+.edit-post {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 16px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: 0.5s;
+  background-color: white;
+  color: #2B2C34;
+  border-radius: 8px;
+}
+
+.edit-post__row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.edit-post__avatar {
+  display: inline;
+}
+
+.edit-post__avatar img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.edit-post__user {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.edit-post__status {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+
+}
+
+.edit-post__data {
+  display: flex;
+  gap: 5px;
+}
+
+.edit-post__author {
+  color: #f26419;
+  font-weight: 500;
+  
+}
+
+.active {
+  color: #6a994e;
+}
+
+.inactive {
+  color: #d62828;
+}
+
+.edit-post__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit-post__title {
+  font-size: 15px;
+  color: #2B2C34;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.edit-post__title:hover {
+  color: #6246EA;
+}
+
+.edit-post__like {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.edit-post__date {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+
+.edit-post__icons {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-post__edit, .edit-post__delete {
+  cursor: pointer;
+}

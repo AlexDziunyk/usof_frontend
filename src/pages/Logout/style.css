@@ -1,0 +1,19 @@
+.loout__container {
+	
+}
+.logout-button {
+  background-color: #d90429;
+  text-decoration: none;
+	color: white;
+	cursor: pointer;
+	padding: 12px 26px;
+	text-align: center;
+	border-radius: 15px;
+	font-weight: 700;
+	font-size: 17px;
+	transition: 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #ef233c;
+}

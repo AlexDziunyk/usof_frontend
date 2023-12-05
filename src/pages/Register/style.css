@@ -1,0 +1,34 @@
+.register__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2B2C34;
+}
+.register {
+  color: #2B2C34;
+  max-width: 760px;
+  width: 100%;
+}
+
+.register>form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  box-shadow: 4px 6px 13px 0px rgba(215, 215, 215, 0.25);
+}
+
+.register>form>input {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+}

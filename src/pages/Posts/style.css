@@ -1,0 +1,16 @@
+.posts {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 15px;
+}
+
+.posts__title {
+	padding: 16px;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.posts__title {
+    
+}

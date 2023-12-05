@@ -1,0 +1,26 @@
+.rating {
+  display: inline-flex;
+  align-items: center;
+  justify-content: start;
+  border-radius: 10px;
+  background-color: #F5F6FA;
+}
+
+.rating_plus, .rating_minus, .rating_count {
+  padding: 15px;
+}
+
+.rating_count {
+  color: #5357B6;
+  font-weight: 700;
+}
+
+.rating_plus, .rating_minus {
+  cursor: pointer;
+  color: #aeb0f7;
+  font-size: 18px;
+}
+
+.rating_count_active {
+  color: #5357B6;
+}

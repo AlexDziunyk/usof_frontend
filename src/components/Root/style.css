@@ -1,0 +1,18 @@
+.root-container {
+  /* display: grid; 
+  grid-template-columns: auto 1fr auto; */
+  /* display: flex;
+  justify-content: center; */
+  
+  
+}
+
+main {
+  /* max-width: 800px;
+  width: 100%;
+  margin: auto; */
+  margin: auto;
+  max-width: 1016px;
+  width: 100%;
+}
+

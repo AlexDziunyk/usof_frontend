@@ -1,0 +1,28 @@
+.reset-password {
+  display: flex;
+  margin: auto;
+  box-sizing: border-box;
+  align-items: center;
+  max-width: 768px;
+  width: 100%;
+  padding: 10px;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.reset-button {
+  border: none;
+  background-color: #38b000;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.reset-password-msg {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+}

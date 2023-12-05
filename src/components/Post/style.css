@@ -1,0 +1,79 @@
+.post {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 16px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition: 0.5s;
+  background-color: white;
+  color: #2B2C34;
+  border-radius: 8px;
+}
+
+.post__avatar {
+  display: inline;
+}
+
+.post__avatar img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.post__user {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.post__status {
+  display: flex;
+  gap: 5px;
+
+}
+
+.post__author {
+  color: #f26419;
+  font-weight: 500;
+  
+}
+
+.active {
+  color: #6a994e;
+}
+
+.inactive {
+  color: #d62828;
+}
+
+.post__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.post__title {
+  font-size: 15px;
+  color: #2B2C34;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.post__title:hover {
+  color: #6246EA;
+}
+
+.post__like {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.post__date {
+  margin-top: 10px;
+  font-size: 14px;
+}
+

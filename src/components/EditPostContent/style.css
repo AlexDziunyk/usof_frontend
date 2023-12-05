@@ -1,0 +1,24 @@
+.edit-post__buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.edit-post_save {
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #38b000;
+}
+
+.edit-post_cancel {
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #d90429;
+}

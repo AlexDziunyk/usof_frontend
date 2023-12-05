@@ -1,0 +1,35 @@
+.admin-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #FFFFFE;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  color: #2B2C34;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.admin-user-data {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.admin-user__login {
+  font-weight: 700;
+}
+
+.admin-user__avatar img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.admin-user__delete {
+  cursor: pointer;
+}
+
+
