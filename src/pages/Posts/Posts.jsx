@@ -54,6 +54,7 @@ const Posts = () => {
   }, []);
 
   const [selectedCategories, setSelectedCategories] = useState([]);
+  const [limit, setLimit] = useState(10);
 
   useEffect(() => {
     const getAllLikesForPost = async(postId) => {
@@ -62,10 +63,9 @@ const Posts = () => {
     }
 
     const getPostsWithLikes = async(postsArr) => {
-      console.log("1332")
       const dataPosts = postsArr.map(async (post) => {
         const likesForPost = await getAllLikesForPost(post.id);
-        console.log("12")
+
         return {...post, likes: likesForPost};
       })
       const postsWithLikes = Promise.all(dataPosts);
@@ -73,8 +73,7 @@ const Posts = () => {
     } 
 
     const getPosts = async() => {
-      const {data} = await axios.get('/posts/');
-      console.log("sdsdsd", [...data.posts])
+      const {data} = await axios.get(`/posts/${limit}`);
 
       const postsWithLikes = await getPostsWithLikes(data.posts);
       
@@ -90,19 +89,18 @@ const Posts = () => {
         setFilteredPosts(postsWithLikes);
       } else {
           const filteredData = postsWithLikes.filter(post => {
-            const categoriesArray = post.categories.split(' ');
+            const categoriesArray = post.categories.split(';');
             if(categoriesArray.some(el => selectedCategories.includes(el))) {
               return post;
           }
         })
-        // const sortedData = filteredData.sort((a, b) => new Date(a.date) - new Date(b.date));
-        // console.log("sort", sortedData)
+        
         setFilteredPosts(filteredData);
       }
     } 
     getPosts();
 
-  }, [selectedCategories, sortingValue]);
+  }, [selectedCategories, sortingValue, limit]);
 
 
   const handleChange = (event) => {
@@ -153,9 +151,9 @@ const Posts = () => {
       
       {filteredPosts.length > 0 ? filteredPosts.map(item => <Post key={item.id} id={item.id} author={item.author} title={item.title} status={item.status} content={item.content} date={item.date}/>)
       :
-      <p>Loading...</p>  
+      <p>No posts yet ;(</p>
       }
-      {filteredPosts && filteredPosts.length === 0 && <p>No posts yet ;(</p>}
+      <div className='posts__loadmore' onClick={() => setLimit(prev => prev + 10)}>Load 10 more</div>
     </div>
   )
 }

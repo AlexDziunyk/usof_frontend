@@ -9,7 +9,7 @@
   color: #2B2C34;
   padding: 20px;
   border-radius: 15px;
-  min-width: 160px;
+  width: 160px;
   min-height: 200px;
   cursor: pointer;
   transition: 0.3s;
@@ -21,12 +21,16 @@
 }
 
 .category__title {
+  word-wrap: break-word;
+  text-align: center;
   font-size: 24px;
   font-weight: 700;
 }
 
 .category__description {
-  
+  word-break: break-all;
+  text-align: center;
+  line-height: 25px;
 }
 
 p {

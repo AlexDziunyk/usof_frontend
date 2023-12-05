@@ -9,7 +9,7 @@
   color: #2B2C34;
   padding: 20px;
   border-radius: 15px;
-  min-width: 160px;
+  width: 160px;
   min-height: 200px;
   transition: 0.3s;
 }
@@ -22,6 +22,8 @@
 .edit-category__title {
   font-size: 24px;
   font-weight: 700;
+  word-wrap: break-word;
+  text-align: center;
 }
 
 .edit-category__icons {
@@ -36,6 +38,12 @@ p {
   padding: 0;
   margin: 0;
 
+}
+
+.edit-category__description {
+  word-break: break-all;
+  text-align: center;
+  line-height: 25px;
 }
 
 .edit-category__edit, .edit-category__delete {

@@ -44,7 +44,7 @@ const CreatePost = () => {
       console.log("File uploaded!");
       getDownloadURL(postRef).then(async(url) => {
         const dateNew = new Date();
-        const blobUrl = await axios.post('/posts/createPost', {title, status: "active", content: url, categories: chipCategory.join(' '), date: dateNew.toString()});
+        const blobUrl = await axios.post('/posts/createPost', {title, status: "active", content: url, categories: chipCategory.join(';'), date: dateNew.toString()});
         navigate('/posts');
       })
     });

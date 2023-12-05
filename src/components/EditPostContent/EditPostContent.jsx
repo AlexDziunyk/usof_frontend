@@ -62,19 +62,15 @@ const EditPostContent = () => {
     const postRef = ref(storage, `Posts/${postId}`);
     console.log("checked!", checked)
     uploadBytes(postRef, blob).then(snapshot => {
-      console.log("File uploaded!");
       getDownloadURL(postRef).then(async(url) => {
         const dateNew = new Date();
-        const blobUrl = await axios.patch(`/posts/updatePost/${id}`, {title, status: status, content: url, categories: chipCategory.join(' '), date: dateNew.toString()});
+        const blobUrl = await axios.patch(`/posts/updatePost/${id}`, {title, status: status, content: url, categories: chipCategory.join(';'), date: dateNew.toString()});
         if(userData) {
           userData.role === "user" ? navigate('/profile/myposts') : navigate('/admin/posts');  
         } 
       })
     });
 
-    // const updatedPost = await axios.patch(`/posts/updatePost/${id}`, {title, status, categories: chipCategory.join(' '), date: dateNew.toString()});
-    // navigate('/profile/myposts');  
-    
   }
 
   const handleCancelEdit = () => {
@@ -109,15 +105,20 @@ const EditPostContent = () => {
 
   const [postData, setPostData] = useState([]);
   const [checked, setChecked] = useState([]);
+  const [content, setContent] = useState();
 
   useEffect(() => {
     const getPostData = async() => {
       const {data} = await axios.get(`posts/getPost/${id}`);
       setPostData(data.post[0]);
       setTitle(data.post[0].title);
-      setChipCategory(data.post[0].categories.split(' '));
+      setChipCategory(data.post[0].categories.split(';'));
       setChecked([data.post[0].status]);
-      
+
+      const blob = await fetch(data.post[0].content);
+      const blobText = await blob.text();
+
+      setContent(blobText);
     }
     getPostData();
   }, [])
@@ -137,7 +138,7 @@ const EditPostContent = () => {
   };
 
 
-  const [content, setContent] = useState('');
+  // const [content, setContent] = useState('');
 
   const userData = useSelector(roleSelector);
 

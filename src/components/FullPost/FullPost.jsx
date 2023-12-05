@@ -54,7 +54,7 @@ const FullPost = () => {
 
       setContent(blobText);
       setPostData(json);
-      setCategories(json.categories.split(' '));
+      setCategories(json.categories.split(';'));
     }
 
     getPost();
@@ -80,8 +80,6 @@ const FullPost = () => {
     getAllLikesForPost();
   }, [isLiked])
 
-  const userData = useSelector(roleSelector);
-  const navigate = useNavigate();
   
   const addLike = async() => {
     if(handleModalOpen()) {

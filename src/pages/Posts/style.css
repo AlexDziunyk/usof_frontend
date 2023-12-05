@@ -14,3 +14,17 @@
 .posts__title {
     
 }
+
+.posts__loadmore {
+	text-align: center;
+	padding: 15px;
+	background-color: #f5f6fa;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: 0.3s;
+
+}
+
+.posts__loadmore:hover {
+	background-color: #cbd0e4;
+}
