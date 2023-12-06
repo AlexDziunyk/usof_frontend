@@ -30,7 +30,7 @@ const AdminComment = ({setUpdatePage, comment_id, author, date, content}) => {
 
   useEffect(() => {
     const getUserData = async() => {
-      const {data} = await axios.get('/auth/me');
+      const {data} = await axios.get(`comments/authorAvatar/${author}`);
       setAvatar(data.avatar);
     }
     getUserData();
